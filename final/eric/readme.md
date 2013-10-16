@@ -1,3 +1,10 @@
-# Eric's GA.FEWD Project Final
-
-First Git Commit!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eaze Co.</title>
+</head>
+<body>
+Eaze Co. 
+Design & Management
+</body>
+</html>
