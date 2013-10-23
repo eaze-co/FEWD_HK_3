@@ -1,0 +1,51 @@
+
+body {
+  background-color: Full Silver;
+}
+
+div {
+  width: 200px;
+  margin: 100px auto;
+}
+
+ul {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  font-size: 50px;
+  font-family: Arial;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  
+  width: 100px;
+  height: 100px;
+  border: solid white 10px;
+  line-height: 100px;
+  background-color: Silver;
+}
+
+.box_a:hover {
+  background-color: LightGreen;
+  font-size: 100px;
+}
+
+.box_b:hover {
+  background-color: LightPink;
+  font-size: 100px;
+}   
+
+.box_c:hover {
+  background-color: LightSalmon;
+  font-size: 100px;
+} 
+
+.box_d:hover {
+  background-color: LightSkyBlue;
+  font-size: 100px;
+} 

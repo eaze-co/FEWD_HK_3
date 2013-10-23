@@ -1,0 +1,53 @@
+
+body {
+  margin: 0 auto;
+}
+
+div {
+  width: 500px;
+  margin: 100px auto;
+}
+
+table {
+  font-size: 25px;
+  font-family: Arial;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  
+  width: 500px;
+  height: 500px;
+  line-height: 125px;
+  background-color: Silver;
+
+}
+
+#row_1{
+/*  max-height: 250px;
+  max-width: 250px;*/
+}
+
+#row_2 {
+/*  max-height: 250px;
+  max-width: 250px;*/
+}
+
+.cell_1:hover {
+  background-color: PaleGoldenRod;
+  font-size: 100px;
+}
+
+.cell_2:hover {
+  background-color: PaleTurquoise;
+  font-size: 100px;
+}
+
+.cell_3:hover {
+  background-color: PaleGreen;
+  font-size: 100px;
+}
+
+.cell_4:hover {
+  background-color: PaleVioletRed;
+  font-size: 100px;
+}
