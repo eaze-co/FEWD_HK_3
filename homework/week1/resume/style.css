@@ -1,3 +1,58 @@
+header {
+	background: black;
+	height: 90;
+	margin: 10 auto auto auto;
+	padding-top: 10;
+	text-align: center;
+	color: white;
+	font-size: 70;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+body {
+	background-color: 5, 5, 5, 0.1;
+}
+
 h1 {
-	color: red;
+	font-family: Arial Narrow;
+	margin: 10 auto 10 auto;
+	padding: 10;
+	height: 600;
+	background: Gainsboro;
+	text-align: center;
+	font-size: 30;
+}
+
+p {
+	font-family: Arial;
+	color: black;
+	font-size: 30;
+}
+
+ul {
+	list-style: none;
+	list-style-position: auto;
+	line-height: 170px;  
+}
+
+li {
+	font-family: Arial Narrow;
+	font-size: 70;
+	color: gray;
+}
+
+.a:hover {
+	color: Salmon;
+	font-size: 80;
+}
+
+.b:hover {
+	color: Gold;
+	font-size: 80;
+}
+
+.c:hover {
+	color: MediumTurquoise;
+	font-size: 80;
 }
