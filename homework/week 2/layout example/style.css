@@ -1,0 +1,17 @@
+* {
+	background-color: silver;
+	width: 1000px;
+}
+
+header {
+	background-color: black;
+	border: solid white 5px;
+	margin: auto;
+	height: 50px;
+
+	font-size: 30px;
+	line-height: 30px;
+
+	text-align: center;
+	color: white;
+}

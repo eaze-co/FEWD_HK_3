@@ -1,0 +1,36 @@
+* {
+	margin: 10px;
+	font-family: Arial Narrow;
+}
+
+body {
+
+}
+
+header {
+	margin: 50px 10px;
+}
+
+h1 {
+	margin-right: 10px;
+	width: 250px;
+	outline: solid black 1px;
+	float: left;
+	font-size: 50px;
+}
+
+h2 {
+	margin: 10px;
+	float: left;
+}
+
+nav {
+
+	width: 500px;
+	background-color: black;
+	margin: 100px auto;
+}
+
+a {
+		outline: 1px solid white;
+}

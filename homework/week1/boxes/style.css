@@ -1,5 +1,6 @@
 
 body {
+  width: 500px;
   background-color: Full Silver;
 }
 
@@ -9,8 +10,9 @@ div {
 }
 
 ul {
-  width: 100px;
-  height: 100px;
+  
+  width: 500px;
+  height: 500px;
   color: white;
   text-align: center;
   list-style: none;

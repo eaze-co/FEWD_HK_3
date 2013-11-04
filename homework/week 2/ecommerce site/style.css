@@ -1,0 +1,93 @@
+* {
+	font-family: Arial;
+}
+
+#container {
+	width: 1000px;
+	height: 2000px;
+	margin: auto;
+}
+
+header {
+	background-color: white;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 75px;	
+	height: 75px;
+	padding: 10px;
+	margin: 0px;
+	float: left;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: left;
+	line-height: 75px;	
+	height: 75px;
+	padding: 10px 200px 10px;
+	margin: 0px;
+}
+
+nav {
+	background-color: black;
+	height: 45px;
+	/*padding: solid black 1px;*/
+	outline: solid white 1px;
+}
+
+a {
+	display: inline-block;
+	background-color: black;
+	font-size: 25px;
+	line-height: 30px;
+	height: 25px;
+	width: 33.33%;
+	padding: 10px 0px;
+	vertical-align: 30px;
+	outline: solid white 1px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* unvisited link */
+a:link { 
+	color: White; 
+}
+
+/* visited link */      
+a:visited { 
+	color: White; 
+}
+
+/* mouse over link */
+a:hover { 
+	color: PaleGreen; 
+	/*background-color: DarkGray;*/
+} 
+
+/* selected link */
+a:active { 
+	color: PaleBlue; 
+} 
+
+#main-container {
+	background-color: white;
+	outline: solid white 1px;
+}
+.item {
+	/*display: inline;*/
+	float: left;
+	outline: solid white 1px;
+	width: 100px;
+	height: 100px;
+}
+
+.picture {
+	float: left;
+	outline: solid white 1px;
+	width: 100px;
+	height: 100px;
+}
