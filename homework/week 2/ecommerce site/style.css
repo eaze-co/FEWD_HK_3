@@ -4,8 +4,9 @@
 
 #container {
 	width: 1000px;
-	height: 2000px;
+	height: 1000px;
 	margin: auto;
+	padding: 20px;
 }
 
 header {
@@ -34,7 +35,6 @@ h2 {
 nav {
 	background-color: black;
 	height: 45px;
-	/*padding: solid black 1px;*/
 	outline: solid white 1px;
 }
 
@@ -52,42 +52,32 @@ a {
 	text-align: center;
 }
 
-/* unvisited link */
 a:link { 
 	color: White; 
 }
-
-/* visited link */      
+     
 a:visited { 
 	color: White; 
 }
 
-/* mouse over link */
 a:hover { 
-	color: PaleGreen; 
-	/*background-color: DarkGray;*/
+	font-size: 25px;
+	line-height: 30px;
+	color: black;
+	background-color: Silver; 
 } 
 
-/* selected link */
 a:active { 
 	color: PaleBlue; 
 } 
 
 #main-container {
 	background-color: white;
-	outline: solid white 1px;
-}
-.item {
-	/*display: inline;*/
-	float: left;
-	outline: solid white 1px;
-	width: 100px;
-	height: 100px;
 }
 
 .picture {
 	float: left;
 	outline: solid white 1px;
-	width: 100px;
-	height: 100px;
+	width: 33.33%;
+	height: auto;
 }
