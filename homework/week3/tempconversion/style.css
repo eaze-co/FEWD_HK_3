@@ -1,0 +1,128 @@
+* {
+	font-family: Arial;
+}
+
+h1 {
+	margin: 100px auto 50px;
+	text-decoration: underline;
+}
+
+body {
+	margin: 75px;
+	text-align: center;
+}
+
+#tempVisualizer {
+	margin: auto;
+}
+
+ul {
+	padding: 0px;
+}
+
+.temp {
+	/*visibility: hidden;*/
+	display: block;
+	margin: auto;
+	margin-top: 1px;
+	margin-bottom: 1px;
+
+	width: 350px;
+	height: 40px;
+
+	border-radius: 2px;
+
+	border: solid white 1px;
+	background-color: silver;
+
+	text-align: center;
+	line-height: 40px;
+
+	text-transform: capitalize;
+
+	background-color: silver;
+	color: silver;
+}
+
+#hot:output  {
+	background-color: #ff5200;
+	color: white;
+}
+
+#warm:output  {
+	background-color: #ff8a45;
+	color: white;
+}
+
+#cool:output  {
+	background-color: #8bccf0;
+	color: white;
+}
+
+#cold:output {
+	background-color: #4696e3;
+	color: white;
+}
+
+#inputC {
+	/*float: left;*/
+	margin: auto;
+}
+
+#inputF {
+	/*float: right;*/
+	margin: auto;
+}
+
+#tempConverter input {
+	display: inline-block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	width: 35px;
+	height: 20px;
+	margin: 10px auto;
+
+	color: black;
+	font-size: 20px;
+
+	border-radius: 2px;
+	border: solid black 2px;
+	background-color: white;
+	color: black;
+}
+
+#tempConverter span { 
+	display: inline-block;
+	margin: 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}*/
+
+#tempConverter button{
+	width: 200px;
+	height: 50px;
+	margin: 20px auto;
+
+	display: inline-block;
+
+	border-radius: 2px;
+	border: solid white 2px;
+	background-color: silver;
+	color: white;
+
+	/*font-weight: bold;*/
+	font-size: 20px;
+}
+
