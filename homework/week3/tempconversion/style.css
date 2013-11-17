@@ -26,21 +26,14 @@ ul {
 	margin: auto;
 	margin-top: 1px;
 	margin-bottom: 1px;
-
 	width: 350px;
 	height: 40px;
-
 	border-radius: 2px;
-
 	border: solid white 1px;
 	background-color: silver;
-
 	text-align: center;
 	line-height: 40px;
-
 	text-transform: capitalize;
-
-	background-color: silver;
 	color: silver;
 }
 
@@ -79,14 +72,11 @@ ul {
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-
 	width: 35px;
 	height: 20px;
 	margin: 10px auto;
-
 	color: black;
 	font-size: 20px;
-
 	border-radius: 2px;
 	border: solid black 2px;
 	background-color: white;
@@ -114,14 +104,11 @@ ul {
 	width: 200px;
 	height: 50px;
 	margin: 20px auto;
-
 	display: inline-block;
-
 	border-radius: 2px;
 	border: solid white 2px;
 	background-color: silver;
 	color: white;
-
 	/*font-weight: bold;*/
 	font-size: 20px;
 }

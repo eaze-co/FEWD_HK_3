@@ -4,11 +4,13 @@
 
 #header {
 	font-family: Arial;
-	width: 300px;
+	width: 290px;
 	margin: 50px auto;
 	text-align: center;
 	font-size: 40px;
 	font-weight: bold;
+	padding: 5px;
+	border-bottom: dotted LightGray 1px;
 }
 
 #a {
@@ -142,7 +144,7 @@ button {
 	width: 200px; 
 	height: 200px;
 	background-color: black;
-	visibility: hidden;
+	display: none;
 }
 
 #bigCircle {
@@ -151,7 +153,7 @@ button {
 	height: 200px;
 	background-color: black;
 	border-radius: 100%;
-	visibility: hidden;
+	display: none;
 }
 
 #bigTriangle {
@@ -161,5 +163,4 @@ button {
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;	
 	border-bottom: 200px solid black;
-	visibility: hidden;
-}
+	display: none;
