@@ -17,9 +17,9 @@
 	color: black;
 }
 
-#shape { margin-bottom: 40px; }
+#pickerShape { margin-bottom: 40px; }
 
-#color { margin-bottom: 40px; }
+#pickerColor { margin-bottom: 40px; }
 
 .title {
 	font-family: Arial;
@@ -65,6 +65,7 @@ button {
 	vertical-align: center;
 	display: inline-block;
 	width: 50px;
+	height: 50px;
 } 
 
 #square {
