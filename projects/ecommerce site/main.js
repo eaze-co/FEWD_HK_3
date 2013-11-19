@@ -1,14 +1,11 @@
 
 // click picture
 
-$(this).click(function() {
-	$(this).toggle		
-
-});
-
 
 // change picture
 
+
+// arrays
 
 // row1
 
