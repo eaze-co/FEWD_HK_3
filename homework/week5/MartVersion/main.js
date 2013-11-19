@@ -3,23 +3,30 @@
 
 // Shape Picker
 
-$("#buttonSquare").click(function() {
-	$("#bigsquare")  .css("display", "inherit");
-	$("#bigcircle")  .css("display", "none"   );
-	$("#bigTriangle").css("display", "none"   );
-});
+$('.buttonContainer').on('click', 'button', function(){
+	$this = $(this);
+	var shape = $this.data('shape');
+	$('.newShapeArea > div').hide();
+	$('#big' + shape).show();
+})
 
-$("#buttonCircle").click(function() {
-	$("#bigCircle")  .css("display", "inherit");
-	$("#bigSquare")  .css("display", "none"   );	
-	$("#bigTriangle").css("display", "none"   );
-});
+// $("#buttonSquare").click(function() {
+// 	$("#bigsquare")  .css("display", "inherit");
+// 	$("#bigcircle")  .css("display", "none"   );
+// 	$("#bigTriangle").css("display", "none"   );
+// });
 
-$("#buttonTriangle").click(function() {
-	$("#bigTriangle").css("display", "inherit"); 
-	$("#bigSquare")  .css("display", "none"   );
-	$("#bigCircle")  .css("display", "none"   );
-});
+// $("#buttonCircle").click(function() {
+// 	$("#bigCircle")  .css("display", "inherit");
+// 	$("#bigSquare")  .css("display", "none"   );	
+// 	$("#bigTriangle").css("display", "none"   );
+// });
+
+// $("#buttonTriangle").click(function() {
+// 	$("#bigTriangle").css("display", "inherit"); 
+// 	$("#bigSquare")  .css("display", "none"   );
+// 	$("#bigCircle")  .css("display", "none"   );
+// });
 
 
 // Color Picker
