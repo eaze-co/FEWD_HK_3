@@ -8,16 +8,20 @@
 	margin-top: 10px;
 	width: 150px;
 	height: auto;
+	outline: none;
 }
 
 header {
 	margin-top: 20px;
-
 }
 
 body {
 	width: 666px;
 	margin: auto;
+}
+
+nav {
+	outline: solid white 1px;
 }
 
 h1 {
@@ -31,11 +35,6 @@ h1 {
 	padding-left: 15px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-}
-
-span {
-	font-weight: normal;
-	margin: 5px;
 }
 
 a {
@@ -52,47 +51,65 @@ a {
 	outline: solid white 1px;
 }
 
-#mensNav:hover { 
+a:hover { 
 	font-size: 15px;
 	line-height: 15px;
 	color: black;
-	font-weight: bold;
-	background-color: silver; 
-} 
-
-#womensNav:hover { 
-	font-size: 15px;
-	line-height: 15px;
-	color: black;
-	font-weight: bold;
-	background-color: silver; 
-} 
-
-#accessoriesNav:hover { 
-	font-size: 15px;
-	line-height: 15px;
-	color: black;
-	font-weight: bold;
 	background-color: silver;
 } 
 
-button {
+.navDrop {
+	width: 100%;
+	margin: auto;
+	padding-left: 0;
+	float: left;
+	color: white;
+	background-color: silver; 
+	text-decoration: none;
+}
+
+#navDropWomens {
+	color: white;
+	/*display: none;*/
+}
+
+#navDropWomens {
+	color: white;
+	/*display: none;*/
+}
+
+#navDropAccessories {
+	color: white;
+	/*display: none;*/
+}
+
+li {
+	font-size: 13px;
+	line-height: 25px;
+	width: 222px;
+	text-align: center;
+	margin: auto;
+	float: left;
+	list-style-type: none;
+	display: none;
+}
+
+li:hover {
+	color: black;
+	font-size: 14px;
+}
+
+img {
 	width: 222px;
 	height: 210px;
 	float: left;
 	margin: none;
-	outline: solid white 1px;
 	padding: 0;
 	border: 0;
+	outline: solid white 1px;
 }
 
 .item {}
-
-
-img {
-	width: 100%;
-	height: auto;
-}
 
 footer {
 	background-color: black;
@@ -101,10 +118,10 @@ footer {
 	width: 666px;
 	height: 30px;
 	float: left;
-	outline: solid white 1px;
 	margin-bottom: 10px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	outline: solid white 1px;
 }
 
 #rights {

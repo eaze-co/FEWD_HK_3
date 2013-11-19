@@ -1,11 +1,64 @@
+// Nav Drop
 
-// click picture
+// $("#buttonSquare").click(function() {
+// 	$("#bigSquare")  .css("display", "inherit");
+// 	$("#bigCircle")  .css("display", "none"   );
+// 	$("#bigTriangle").css("display", "none"   );
+// });
 
 
-// change picture
 
 
-// arrays
+
+
+
+
+
+
+// Pic Changer
+
+// document.ready shorthand
+$(function(){
+
+// override all your placeholders 
+        $('#main-container img').each(function( index ){
+                $this = $(this);
+                var url = eval('bandana' + selectImages($this))[0]
+                $this.attr('src', url);
+        })
+
+// listen for clicks on images
+        $('#main-container').on('click','img', function(){
+                $this = $(this);
+
+        // decide which image is next                
+                var nextImage = selectNextImage($this, selectImages($this));
+
+        // change current image to next image
+                $this.attr('src', nextImage);
+        })
+
+        function selectImages(current){
+                // which square is being clicked?
+                return $('#main-container img').index(current) + 1;
+        }
+
+        function selectNextImage(current, images){
+                var images = getArray(images);
+                var url = current.attr('src');
+                var currentImage = images.indexOf(url)
+                nextImage = (currentImage + 1) % images.length;
+                return images[nextImage];
+        }
+
+        // evil code - but useful if you want to stick to this data-structure
+        function getArray(index){
+                return eval('bandana' + index);
+        };
+
+})
+
+
 
 // row1
 
