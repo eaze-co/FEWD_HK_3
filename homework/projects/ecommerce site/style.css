@@ -83,14 +83,8 @@ button {
 	border: 0;
 }
 
-/*.item {
-	width: 222px;
-	height: 210px;
-	float: left;
-	margin: none;
-	outline: solid white 1px;
-}
-*/
+.item {}
+
 
 img {
 	width: 100%;
