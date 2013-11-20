@@ -1,132 +1,222 @@
-* {
-	font-family: Arial;
-}
 
-#container{}
 
-#eazeLogo {
-	margin-top: 10px;
-	width: 150px;
-	height: auto;
+/* ---> Default ......................................................... */
+
+	* {
+		font-family: Arial;
+	}
+
+
+/* ---> Which is better to set width for Responsive Design? ('body' or '#container') <--- */
+
+	body {
+		width: 666px;
+		margin: auto;
+	}
+	
+	#container{
+		width: 666px;
+		margin: auto;
+	}
+
+	
+/* ---> Header .......................................................... */
+
+	header {
+		margin-top: 20px;
+	}
+
+	h1 {
+		background-color: black;
+		color: white;
+		margin: auto;
+		width: auto;
+		height: 50px;
+		font-size: 25px;
+		line-height: 50px;	
+		border-top-left-radius:  15px;
+		border-top-right-radius: 15px;
+	}
+
+	#eazeLogo {
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		width: auto;
+		height: 25px;
+		outline: none;
+	}
+	
+	#searchBar {
+		float: right;
+		margin-right: 15px;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		width: 125px;
+		height: 15px;
+		border-radius: 15px;
+		padding: 2px;
+		border: 0;
+		outline: none;
+		color: silver;
+	}
+
+
+/* ---> Nav ............................................................. */
+
+	nav {
+		outline: solid white 1px;
+	}
+	
+	a {
+		display: inline-block;
+		background-color: black;
+		color: white; 
+		width: 33.33%;
+		height: 30px;
+		line-height: 30px;
+		font-size: 15px;
+		text-decoration: none;
+		text-align: center;
+		/*outline: solid white 1px;*/
+	}
+	
+	a:hover { 
+		color: black;
+		background-color: silver;
+	} 
+	
+	.navDrop {
+		width: 100%;
+		margin: auto;
+		padding-left: 0;
+		float: left;
+		color: white;
+		background-color: silver; 
+		text-decoration: none;
+	}
+	
+	li {
+		width: 33.33%;
+		height: 30px;
+		line-height: 30px;
+		font-size: 13px;
+		text-align: center;
+		margin: auto;
+		float: left;
+		list-style-type: none;
+	}
+	
+	li:hover {
+		color: black;
+	}
+	
+	.category {
+		color: white;
+		height: 30px;
+	}
+	
+	#dropMens {
+		display: none;
+	}
+	
+	#dropWomens {
+		display: none;
+	}
+	
+	#dropAccessories {
+		display: none;
+	}
+	
+	
+/* ---> Images .......................................................... */
+
+	#imgContainer {
+		width: 100%;
+		height: same-as-width;
+	}
+	
+	img {
+		width: 33.33%;
+		height: same-as-width;
+		float: left;
+		margin: none;
+		padding: 0;
+		border: 0;
+		outline: solid white 1px;
+	}
+	
+	
+/* ---> Footer .......................................................... */
+
+	footer {
+		background-color: black;
+		color: white;
+		margin: auto;
+		width: 100%;
+		height: 30px;
+		float: left;
+		margin-bottom: 10px;
+		border-bottom-left-radius:  15px;
+		border-bottom-right-radius: 15px;
+		outline: solid white 1px;
+	}
+	
+	#rights {
+		margin-right: 15px;
+		text-align: right;
+		font-size: 10px;
+		line-height: 35px;
+	}
+
+/*	.extras {
+		width: 33.33%;
+		font-size: 10px;
+	}
+
+	#contact {
+	}
+
+	#faq {
+	}
+
+	#about {
+		border-bottom-left-radius: 15px;
+	}
+
+	.extras:hover {
+		background-color: silver;
+
+	}
+
+	#footerExtras {
+		float: left;
+		width: 33.33%;
+		height: 30px;
+		padding: 0;
+		line-height: 35px;
+		margin-top: 0;
+		margin-bottom: 10px;
+		outline:  solid white 1px;
+	}
+
+	#footerMiddle {
+		float: left;
+		width: 33.33%;
+		height: 30px;
+	}*/
+
+/* ---> Instagram Logo ................................................... */
+
+/*#instgramLogo {
+
+	width: 20px;
+	height: 20px;
+	background-color: white;
 	outline: none;
-}
-
-header {
-	margin-top: 20px;
-}
-
-body {
-	width: 666px;
-	margin: auto;
-}
-
-nav {
-	outline: solid white 1px;
-}
-
-h1 {
-	background-color: black;
-	color: white;
-	margin: auto;
-	width: auto;
-	height: 50px;
-	font-size: 25px;
-	line-height: 50px;	
-	padding-left: 15px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-a {
-	display: inline-block;
-	background-color: black;
-	color: white; 
-	font-size: 15px;
-	line-height: 15px;
-	height: 15px;
-	width: 222px;
-	padding: 10px 0px;
-	text-decoration: none;
-	text-align: center;
-	outline: solid white 1px;
-}
-
-a:hover { 
-	font-size: 15px;
-	line-height: 15px;
-	color: black;
-	background-color: silver;
-} 
-
-.navDrop {
-	width: 100%;
-	margin: auto;
-	padding-left: 0;
 	float: left;
-	color: white;
-	background-color: silver; 
-	text-decoration: none;
-}
 
-#navDropWomens {
-	color: white;
-	/*display: none;*/
-}
+}*/
 
-#navDropWomens {
-	color: white;
-	/*display: none;*/
-}
 
-#navDropAccessories {
-	color: white;
-	/*display: none;*/
-}
 
-li {
-	font-size: 13px;
-	line-height: 25px;
-	width: 222px;
-	text-align: center;
-	margin: auto;
-	float: left;
-	list-style-type: none;
-	display: none;
-}
-
-li:hover {
-	color: black;
-	font-size: 14px;
-}
-
-img {
-	width: 222px;
-	height: 210px;
-	float: left;
-	margin: none;
-	padding: 0;
-	border: 0;
-	outline: solid white 1px;
-}
-
-.item {}
-
-footer {
-	background-color: black;
-	color: white;
-	margin: auto;
-	width: 666px;
-	height: 30px;
-	float: left;
-	margin-bottom: 10px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	outline: solid white 1px;
-}
-
-#rights {
-	margin-right: 5px;
-	text-align: right;
-	font-size: 10px;
-	line-height: 40px;
-}

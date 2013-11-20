@@ -1,4 +1,4 @@
-<!doctype html>
+
 
 <html>
 
@@ -14,32 +14,36 @@
 		<header>
 			<h1>
 				<img id="eazeLogo" src="eaze_co---logo_bigdot.png">
+
+				<input type="search" id="searchBar" value="search">
 			</h1>
+
 		</header>
 
 		<nav>
 			<a class="nav" id="navMens" href="#"> Men's </a><a class="nav" id="navWomens" href="#"> Women's </a><a class="nav" id="navAccessories" href="#"> Accessories </a>
 		</nav>
 
-		<ul class="navDrop">	
-			<li class="dropMens"> Outerwear </li>
-			<li class="dropMens"> Tops      </li>
-			<li class="dropMens"> Bottoms   </li>
+		<!-- How do I add - x - with jQuery? -->
+		<ul class="navDrop" id="dropMens">	
+			<li class="category"> - Outerwear - </li>
+			<li class="category"> - Tops -      </li>
+			<li class="category"> - Bottoms -   </li>
 		</ul>
 
-		<ul class="navDrop">	
-			<li class="dropWomens"> Outerwear </li>
-			<li class="dropWomens"> Tops      </li>
-			<li class="dropWomens"> Bottoms   </li>
+		<ul class="navDrop" id="dropWomens">	
+			<li class="category"> - Outerwear - </li>
+			<li class="category"> - Tops -      </li>
+			<li class="category"> - Bottoms -   </li>
 		</ul>
 
-		<ul class="navDrop">	
-			<li class="dropAccessories"> Bags  </li>
-			<li class="dropAccessories"> Shoes </li>
-			<li class="dropAccessories"> Other </li>
+		<ul class="navDrop" id="dropAccessories">	
+			<li class="category"> - Bags -  </li>
+			<li class="category"> - Shoes - </li>
+			<li class="category"> - Other - </li>
 		</ul>
 
-		<div id="main-container">
+		<div id="imgContainer">
 				
         	<!-- row1 -->
         		<img>
@@ -54,17 +58,31 @@
         	<!-- row3 -->
         		<img>
         		<img>
+        		<img>		
+		</div>
+
+		<footer>
+<!-- 			<div id="footerLeft">
+				<ul id="footerExtras">
+				    <li  class="extras" id="about"> About </li>
+				    <li  class="extras" id="contact"> Contact </li>
+				    <li  class="extras" id="faq"> FAQ </li>
+				</ul>
+			</div> -->
+
+			<div id="footerMiddle">
         		<img>
-				
-		</div>	
+        		<img>
+        		<img>
+			</div>
+
+			<div id="rights">All rights reserved.</div>
+		</footer>
+
 	</div>
 	
-	<footer>
-		<div id="rights">All rights reserved.</div>
-	</footer>
 
-
-	<!-- jQuery CDN -->
+<!-- jQuery CDN -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="main.js"></script>
 	

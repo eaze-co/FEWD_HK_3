@@ -1,64 +1,76 @@
-// Nav Drop
 
-// $("#buttonSquare").click(function() {
-// 	$("#bigSquare")  .css("display", "inherit");
-// 	$("#bigCircle")  .css("display", "none"   );
-// 	$("#bigTriangle").css("display", "none"   );
-// });
-
-
-
-
-
-
-
-
-
-
-// Pic Changer
 
 // document.ready shorthand
 $(function(){
 
-// override all your placeholders 
-        $('#main-container img').each(function( index ){
-                $this = $(this);
-                var url = eval('bandana' + selectImages($this))[0]
-                $this.attr('src', url);
+
+// ---> Nav Drop ...........................................................
+
+	// Why does this not work?
+
+		// $("navMens").click(function(){
+		//   $(".dropMens").show();
+		// });
+	
+
+	// Why does this not work (either)?
+
+	// 	$("#navMens").onclick(function(){
+	// 	  $("#dropMens").css("display", "inherent");
+	// 	});
+
+
+
+
+
+// ---> Pic Changer ........................................................	
+
+	// override all placeholders 
+        $('#imgContainer img').each(function( index ){
+            $this = $(this);
+            var imgLink = eval('bandana' + selectImages($this))[0]
+            $this.attr('src', imgLink);
         })
 
-// listen for clicks on images
-        $('#main-container').on('click','img', function(){
-                $this = $(this);
+	// listen for clicks on images
+        $('#imgContainer').on('click','img', function(){
+            $this = $(this);
 
         // decide which image is next                
-                var nextImage = selectNextImage($this, selectImages($this));
+            var nextImage = selectNextImage($this, selectImages($this));
 
         // change current image to next image
-                $this.attr('src', nextImage);
+            $this.attr('src', nextImage);
         })
 
+    // ---> what does this function do?
         function selectImages(current){
-                // which square is being clicked?
-                return $('#main-container img').index(current) + 1;
+
+    // ---> which square is being clicked? 
+            return $('#imgContainer img').index(current) + 1;
         }
 
+    // ---> what does this function do?
         function selectNextImage(current, images){
-                var images = getArray(images);
-                var url = current.attr('src');
-                var currentImage = images.indexOf(url)
-                nextImage = (currentImage + 1) % images.length;
-                return images[nextImage];
+            var images = getArray(images);
+            var imgLink = current.attr('src');
+            var currentImage = images.indexOf(imgLink)
+            nextImage = (currentImage + 1) % images.length;
+            return images[nextImage];
         }
 
-        // evil code - but useful if you want to stick to this data-structure
+    // evil code - but useful if (you) want to stick to this data-structure
         function getArray(index){
-                return eval('bandana' + index);
+            return eval('bandana' + index);
         };
 
-})
+
+}) 
+// ---> jQuery End ...
 
 
+
+// ---> imgLink(s) .........................................................
 
 // row1
 
