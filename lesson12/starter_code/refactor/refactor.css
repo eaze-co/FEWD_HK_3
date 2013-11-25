@@ -1,18 +1,27 @@
 /*Combine multiples*/
-#buttons-wrapper{
+/*#buttons-wrapper {
      padding:10px;
      border:1px solid black;
      background:orange;
-}
-#buttons-wrapper>form{
+}*/
+
+#buttons-wrapper,
+#buttons-wrapper>form {
      padding:10px;
      border:1px solid black;
 }
 
+#buttons-wrapper {
+     background:orange;
+}
 
 
 /*Rename classes/ids for readability*/
-#img1{
+/*#img1{
+     margin-top: 50px;
+}*/
+
+#profilePic {
      margin-top: 50px;
 }
 

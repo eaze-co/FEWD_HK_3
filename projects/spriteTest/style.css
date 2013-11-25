@@ -1,0 +1,39 @@
+* {
+	display: block;
+}
+
+head {
+	display: none;
+}
+
+img#sprite {
+	display: none;
+}
+
+img[data-suit="clubs"] {
+	background-image: url(http://ga-students.github.io/FEWD_HK_3/lesson11/starter_code/matching/images/classic-playing-cards.png);
+	width: 73px;
+  	height: 98px;
+  	background-position: 0px 0px; 
+}
+
+img[data-suit="spades"]{
+	background-image: url(http://ga-students.github.io/FEWD_HK_3/lesson11/starter_code/matching/images/classic-playing-cards.png);
+	width: 73px;
+  	height: 98px;
+  	background-position: 0px -98px;
+}
+
+img[data-suit="hearts"]{
+	background-image: url(http://ga-students.github.io/FEWD_HK_3/lesson11/starter_code/matching/images/classic-playing-cards.png);
+	width: 73px;
+  	height: 98px;
+  	background-position: 0px -196px;
+}
+
+img[data-suit="diamonds"]{
+	background-image: url(http://ga-students.github.io/FEWD_HK_3/lesson11/starter_code/matching/images/classic-playing-cards.png);
+	width: 73px;
+  	height: 98px;
+  	background-position: 0px -294px;
+}

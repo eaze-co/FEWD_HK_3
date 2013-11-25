@@ -1,29 +1,39 @@
 
 
-/* ---> Default ......................................................... */
+/* ---> Default .............................................. */
 
 	* {
-		font-family: Arial;
+		font-family: Avenir;
+		letter-spacing: .5px;
+		/*text-transform: capitalize;*/
 	}
+
+	.nav.active { 
+		color: black;
+		background-color: silver;
+		outline: solid white 1px;
+		z-index: 1;
+	}  
 
 
 /* ---> Which is better to set width for Responsive Design? ('body' or '#container') <--- */
 
 	body {
 		width: 666px;
-		margin: auto;
+		/*margin: auto;*/
+		margin-left: 27px;
 	}
 	
-	#container{
+/*	#container{
 		width: 666px;
-		margin: auto;
 	}
-
+*/
 	
-/* ---> Header .......................................................... */
+/* ---> Header ............................................... */
 
 	header {
-		margin-top: 20px;
+		/*margin-top: 20px;*/
+		border-bottom: solid white 1px;
 	}
 
 	h1 {
@@ -45,6 +55,7 @@
 		width: auto;
 		height: 25px;
 		outline: none;
+		border: none;
 	}
 	
 	#searchBar {
@@ -62,78 +73,115 @@
 	}
 
 
-/* ---> Nav ............................................................. */
+/* ---> Nav .................................................. */
 
-	nav {
-		outline: solid white 1px;
+	#nav {
+		width: 666px;
 	}
-	
-	a {
-		display: inline-block;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-decoration: none;		
+		text-align: center;
 		background-color: black;
-		color: white; 
+		color: white;
+	}
+
+	.nav {
+		list-style: none;
+		margin: auto;
+		padding: 0;
+		width: 100%;
+		text-decoration: none;		
+		text-align: center;
+		background-color: black;
+		color: white;
+
+		display: inline-block;
 		width: 33.33%;
 		height: 30px;
 		line-height: 30px;
-		font-size: 15px;
-		text-decoration: none;
-		text-align: center;
-		/*outline: solid white 1px;*/
+		position: relative;
+		float: left;
 	}
-	
-	a:hover { 
+
+	.nav:hover {
 		color: black;
 		background-color: silver;
-	} 
-	
-	.navDrop {
-		width: 100%;
-		margin: auto;
-		padding-left: 0;
-		float: left;
-		color: white;
-		background-color: silver; 
-		text-decoration: none;
+		outline: solid white 1px;
+		z-index: 1;
 	}
-	
-	li {
+
+	.navDrop {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		text-decoration: none;		
+		background-color: black;
+		color: white;
+		text-align: center;
+
+		display: inline-block;
 		width: 33.33%;
 		height: 30px;
 		line-height: 30px;
+		float: left;
+	}
+
+	#categoryContainer {
+		background-color: black;
+		width: 666px;
+		height: 30px;
+		float: left;
+		display: none;
+	}
+
+	li:hover {
+		color: black;
+		background-color: silver;
+		outline: solid white 1px;
+		z-index: 2;
+	}
+	
+	.category {
+		line-height: 30px;
 		font-size: 13px;
+		width: 33.33%;
 		text-align: center;
 		margin: auto;
 		float: left;
 		list-style-type: none;
 	}
 	
-	li:hover {
-		color: black;
-	}
-	
-	.category {
-		color: white;
-		height: 30px;
-	}
-	
 	#dropMens {
+		float: left;
 		display: none;
 	}
 	
 	#dropWomens {
+		margin-left: 33.33%;
+		margin-right: 33.33%;
 		display: none;
 	}
 	
 	#dropAccessories {
+		float: right;
 		display: none;
 	}
 	
 	
-/* ---> Images .......................................................... */
+ /*---> Images ............................................... */
 
 	#imgContainer {
+		position: relative;
 		width: 100%;
 		height: same-as-width;
+		/*border-top: solid white 1px;*/
+		/*display: none;*/
 	}
 	
 	img {
@@ -142,81 +190,76 @@
 		float: left;
 		margin: none;
 		padding: 0;
-		border: 0;
 		outline: solid white 1px;
+	}
+
+	.sidePic {
+		z-index: 3;
 	}
 	
 	
-/* ---> Footer .......................................................... */
+ /*---> Footer ............................................... */
 
 	footer {
-		background-color: black;
-		color: white;
-		margin: auto;
-		width: 100%;
 		height: 30px;
+	}
+
+	.footer {
+		width: 100%;
+		height: 100%;
 		float: left;
-		margin-bottom: 10px;
-		border-bottom-left-radius:  15px;
-		border-bottom-right-radius: 15px;
-		outline: solid white 1px;
-	}
-	
-	#rights {
-		margin-right: 15px;
-		text-align: right;
-		font-size: 10px;
-		line-height: 35px;
+		font-size: 12px;
+		line-height: 30px;
+		border-top: solid white 1px;
 	}
 
-/*	.extras {
+	#footerLeft {
+		font-size: 10px;
 		width: 33.33%;
-		font-size: 10px;
+		margin-right: 66.66%;
+		float: left;
+		background-color: black;
+		border-bottom-left-radius: 15px;
+		z-index: 2;
 	}
 
-	#contact {
-	}
-
-	#faq {
-	}
-
-	#about {
+	#bottomLeft:hover {
+		color: black;
+		background-color: silver; 
 		border-bottom-left-radius: 15px;
 	}
 
-	.extras:hover {
+	.leftFooter {
+		width: 33.33%;
+		float: left;
+	}
+
+	#footerRight {
+		background-color: black;
+		/*float: right;*/
+		color: white;
+		margin-left: 33.33%;
+		width: 66.66%;
+		height: 30px;
+		border-bottom-right-radius: 15px;	
+	}
+
+/* ---> Why are #allRights below footer? <--- */
+/* ---> It seems to have to do with the 'float: right;' of '#footerRight' <--- */
+
+	#allRights {
 		background-color: silver;
-
-	}
-
-	#footerExtras {
-		float: left;
-		width: 33.33%;
-		height: 30px;
-		padding: 0;
-		line-height: 35px;
+		color: white;
+		font-size: 8px;
+		padding: 5px;
+		/*outline: solid white 1px;*/
+		/*position: relative;*/
+		float: right;
 		margin-top: 0;
-		margin-bottom: 10px;
-		outline:  solid white 1px;
+		margin-bottom: 0;
+		margin-right: 15px; 
+		vertical-align: center;
+		line-height: 10px;
 	}
-
-	#footerMiddle {
-		float: left;
-		width: 33.33%;
-		height: 30px;
-	}*/
-
-/* ---> Instagram Logo ................................................... */
-
-/*#instgramLogo {
-
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	outline: none;
-	float: left;
-
-}*/
-
 
 

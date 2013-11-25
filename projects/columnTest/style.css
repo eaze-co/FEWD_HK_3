@@ -1,0 +1,120 @@
+
+
+/* ---> Default .............................................. */
+
+	* {
+		font-family: Avenir;
+		letter-spacing: .5px;
+		/*text-transform: capitalize;*/
+	}
+
+	.nav.active { 
+		color: black;
+		background-color: silver;
+		border-bottom: solid white 1px;
+	}  
+
+
+/* ---> Which is better to set width for Responsive Design? ('body' or '#container') <--- */
+
+	body {
+		width: 666px;
+		/*margin: auto;*/
+		margin-left: 27px;
+	}
+	
+/*	#container{
+		width: 666px;
+	}
+*/
+	
+/* ---> Header ............................................... */
+
+	header {
+		/*margin-top: 20px;*/
+		border-bottom: solid white 1px;
+	}
+
+	h1 {
+		background-color: black;
+		color: white;
+		margin: auto;
+		width: auto;
+		height: 50px;
+		font-size: 25px;
+		line-height: 50px;	
+		border-top-left-radius:  15px;
+		border-top-right-radius: 15px;
+	}
+
+	#eazeLogo {
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		width: auto;
+		height: 25px;
+		outline: none;
+		border: none;
+	}
+	
+	#searchBar {
+		float: right;
+		margin-right: 15px;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		width: 125px;
+		height: 15px;
+		border-radius: 15px;
+		padding: 2px;
+		border: 0;
+		outline: none;
+		color: silver;
+	}
+
+
+/* ---> Nav .................................................. */
+
+	#nav {
+		width: 666px;
+		border-bottom: 
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-decoration: none;		
+		text-align: center;
+		background-color: black;
+		color: white;
+	}
+
+	.nav {
+		list-style: none;
+		margin: auto;
+		padding: 0;
+		width: 100%;
+		text-decoration: none;		
+		text-align: center;
+		background-color: black;
+		color: white;
+
+		display: block;
+		width: 33.33%;
+		height: 30px;
+		line-height: 30px;
+
+		position: relative;
+		float: left;
+	}
+
+	.nav:hover {
+		color: black;
+		background-color: silver;
+		outline: solid white 1;
+		z-index: 1;
+	}
+
+	
+	
