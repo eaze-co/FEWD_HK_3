@@ -11,7 +11,7 @@
 			$("#navWomens")     .removeClass("active");
 			$("#navAccessories").removeClass("active");
 
-			$("#categoryContainer").slideDown();
+			$("#categoryContainer").slideToggle();
 			// $("#categoryContainer").slideToggle();
 
 			$("#dropMens")       .show();
@@ -27,7 +27,7 @@
 			$("#navWomens")     .addClass("active");
 			$("#navAccessories").removeClass("active");
 
-			$("#categoryContainer").slideDown();
+			$("#categoryContainer").slideToggle();
 			// $("#categoryContainer").slideToggle();
 
 			$("#dropMens")       .hide();
@@ -43,7 +43,7 @@
 			$("#navWomens")     .removeClass("active");
 			$("#navAccessories").addClass("active");
 
-			$("#categoryContainer").slideDown();
+			$("#categoryContainer").slideToggle();
 			// $("#categoryContainer").slideToggle();
 
 			$("#dropMens")       .hide();
@@ -55,14 +55,8 @@
 // ---> To View Pics Click Sub Category ....................................
 
 		$(".category").click(function(){
-
-			// Why does '$this' does not work?
-			var $this = $(this);
 			$(this).addClass("active");
-
 			$("#imgContainer").slideToggle(500);
-
-		
 		});
 
 

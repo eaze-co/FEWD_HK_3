@@ -29,14 +29,6 @@ ul li {
 
 ul li:first-child {
   display: block;
-  float: right;
-}
-
-.line {
-  border: 1px solid black;
-  width: 16px;
-  height: 4px;
-  margin: 0 11px;
 }
 
 #container {
@@ -67,3 +59,4 @@ ul li:first-child {
   height: 40px;
   box-sizing: border-box;
 }
+

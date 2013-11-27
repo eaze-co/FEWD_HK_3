@@ -2,72 +2,84 @@
 
 /* ---> Default .............................................. */
 
-	* {
+	html {
 		font-family: Avenir;
 		letter-spacing: .5px;
-		/*text-transform: capitalize;*/
 	}
 
-	.nav.active { 
+	.active { 
 		color: black;
 		background-color: silver;
-		outline: solid white 1px;
-		z-index: 1;
-	}  
+	}   
 
-
-/* ---> Which is better to set width for Responsive Design? ('body' or '#container') <--- */
-
-	body {
-		width: 666px;
-		/*margin: auto;*/
-		margin-left: 27px;
+	.clearfix:after {
+	  content: ".";
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  line-height: 0;
+	  height: 0;
 	}
-	
-/*	#container{
-		width: 666px;
+
+
+/* ---> Body ................................................. */
+
+	#bodyContainer {
+		width: 90%;
+		margin: auto;
 	}
-*/
+
 	
 /* ---> Header ............................................... */
 
-	header {
-		/*margin-top: 20px;*/
-		border-bottom: solid white 1px;
-	}
-
-	h1 {
+	#headerContainer {
 		background-color: black;
 		color: white;
-		margin: auto;
-		width: auto;
-		height: 50px;
-		font-size: 25px;
-		line-height: 50px;	
+
+		width: 100%;
+
 		border-top-left-radius:  15px;
 		border-top-right-radius: 15px;
+
+		border-top:   solid white 1px;
+		border-right: solid white 1px;
+		border-left:  solid white 1px;
+		/*border: solid white 1px;*/
+
+		box-sizing: border-box;
 	}
 
 	#eazeLogo {
-		margin-left: 15px;
-		margin-top: 15px;
+		margin-top:    15px;
 		margin-bottom: 10px;
-		width: auto;
+		margin-left:   15px;
+		margin-right:  5px;
+		
+		float: left;
+
 		height: 25px;
+		width: auto;
+		
 		outline: none;
 		border: none;
 	}
 	
 	#searchBar {
-		float: right;
-		margin-right: 15px;
-		margin-top: 25px;
+		margin-top:    25px;
 		margin-bottom: 10px;
-		width: 125px;
+		margin-right:  15px;
+		margin-left:   5px;
+
+		float: right;
+
+		max-width: 25%;
+		min-width: 10%;
+
 		height: 15px;
 		border-radius: 15px;
 		padding: 2px;
 		border: 0;
+
 		outline: none;
 		color: silver;
 	}
@@ -75,9 +87,39 @@
 
 /* ---> Nav .................................................. */
 
-	#nav {
-		width: 666px;
+	#navContainer {
+		width: 100%;
+		border: solid white 1px;
+		box-sizing: border-box;
 	}
+
+	#deptContainer {
+		width: 100%;
+	}
+
+	#categoryContainer {
+		background-color: black;
+		height: 30px;
+		/*float: left;*/
+		display: none;
+	}
+
+/*	#deptContainer {
+		list-style: none;
+		margin: auto;
+		padding: 0;
+		width: 100%;
+		text-decoration: none;		
+		text-align: center;
+		background-color: black;
+		color: white;
+		display: inline-block;
+		width: 33.33%;
+		height: 30px;
+		line-height: 30px;
+		position: relative;
+		float: left;
+	}*/
 
 	ul {
 		list-style: none;
@@ -99,7 +141,6 @@
 		text-align: center;
 		background-color: black;
 		color: white;
-
 		display: inline-block;
 		width: 33.33%;
 		height: 30px;
@@ -108,42 +149,40 @@
 		float: left;
 	}
 
-	.nav:hover {
+/*	.nav:hover {
 		color: black;
 		background-color: silver;
 		outline: solid white 1px;
 		z-index: 1;
 	}
-
+*/
 	.navDrop {
+		display: inline-block;
 		list-style: none;
 		margin: 0;
 		padding: 0;
-
 		text-decoration: none;		
 		background-color: black;
 		color: white;
 		text-align: center;
-
-		display: inline-block;
 		width: 33.33%;
-		height: 30px;
 		line-height: 30px;
 		float: left;
 	}
 
 	#categoryContainer {
 		background-color: black;
-		width: 666px;
+		width: 100%;
 		height: 30px;
 		float: left;
+		/*border-bottom: solid white 1px;*/
 		display: none;
 	}
 
 	li:hover {
 		color: black;
 		background-color: silver;
-		outline: solid white 1px;
+		/*outline: solid white 1px;*/
 		z-index: 2;
 	}
 	
@@ -177,11 +216,9 @@
  /*---> Images ............................................... */
 
 	#imgContainer {
-		position: relative;
 		width: 100%;
 		height: same-as-width;
-		/*border-top: solid white 1px;*/
-		/*display: none;*/
+		display: none;
 	}
 	
 	img {
@@ -190,42 +227,46 @@
 		float: left;
 		margin: none;
 		padding: 0;
-		outline: solid white 1px;
-	}
-
-	.sidePic {
-		z-index: 3;
+		border: solid white 1px;
+		box-sizing: border-box;
 	}
 	
 	
  /*---> Footer ............................................... */
 
-	footer {
-		height: 30px;
-	}
+	#footerContainer {
+		/*background-color: black;*/
 
-	.footer {
 		width: 100%;
-		height: 100%;
 		float: left;
-		font-size: 12px;
-		line-height: 30px;
-		border-top: solid white 1px;
+
+/*		font-size: 12px;
+		line-height: 30px;*/
+
+/*		border-bottom-left-radius:  15px;
+		border-bottom-right-radius: 15px;*/
+		
+		border-bottom:   solid white 1px;
+		border-right: solid white 1px;
+		border-left:  solid white 1px;
+		/*border: solid white 1px;*/
+
+		box-sizing: border-box;
 	}
 
 	#footerLeft {
+		background-color: black;		
 		font-size: 10px;
 		width: 33.33%;
-		margin-right: 66.66%;
+		height: 30px;
+		line-height: 30px;
 		float: left;
-		background-color: black;
 		border-bottom-left-radius: 15px;
-		z-index: 2;
+
+		box-sizing: border-box;
 	}
 
 	#bottomLeft:hover {
-		color: black;
-		background-color: silver; 
 		border-bottom-left-radius: 15px;
 	}
 
@@ -234,32 +275,31 @@
 		float: left;
 	}
 
+	#footerCenter {
+		background-color: black;
+		float: left;
+		color: white;
+		width: 33.33%;
+		height: 30px;
+	}
+
 	#footerRight {
 		background-color: black;
-		/*float: right;*/
+		float: right;
 		color: white;
-		margin-left: 33.33%;
-		width: 66.66%;
+		width: 33.33%;
 		height: 30px;
 		border-bottom-right-radius: 15px;	
 	}
 
-/* ---> Why are #allRights below footer? <--- */
-/* ---> It seems to have to do with the 'float: right;' of '#footerRight' <--- */
-
 	#allRights {
-		background-color: silver;
 		color: white;
-		font-size: 8px;
-		padding: 5px;
-		/*outline: solid white 1px;*/
-		/*position: relative;*/
+		font-size: 9px;
+		position: relative;
 		float: right;
-		margin-top: 0;
 		margin-bottom: 0;
 		margin-right: 15px; 
-		vertical-align: center;
-		line-height: 10px;
+		line-height: 25px;
 	}
 
 

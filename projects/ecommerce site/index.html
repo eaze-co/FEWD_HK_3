@@ -9,105 +9,104 @@
 
 <body>
 	
-<!-- 	<div id="container"> -->
+<div id="bodyContainer">
 
 	<!-- Header ...............................................  -->
 
-		<header>
+	<header>
+		<div id="headerContainer" class="clearfix">
 
-			<h1>
-				<img id="eazeLogo" src="eaze_co---logo_bigdot.png">
-
-				<input type="search" id="searchBar" value="search">
-			</h1>
-
-		</header>
+			<img id="eazeLogo" src="eaze_co---logo_bigdot.png">
+			<input type="search" id="searchBar" value="search">
+			
+		</div>
+	</header>
 
 
 	<!-- Nav ...............................................  -->
 
-		<nav id="nav">			
-			<ul>
-			    <li class="nav" id="navMens" href="#"             > mens  </li>
-			    <li class="nav" id="navWomens" href="#"         > womens  </li>
-			    <li class="nav" id="navAccessories" href="#"> accessories </li>
+	<nav>			
+			
+		<div id="navContainer" class="clearfix">
+
+			<ul id="deptContainer" class="clearfix">
+			    <li class="nav" id="navMens"        href="#" > mens        </li>
+			    <li class="nav" id="navWomens"      href="#" > womens      </li>
+			    <li class="nav" id="navAccessories" href="#" > accessories </li>
 			</ul>
-		</nav>
+		
 
 
 	<!-- Category Drop ..........................................  -->
 
-		<div id="categoryContainer">
-
-			<ul class="navDrop" id="dropMens">	
-				<li class="category" data-category="jackets"  > jackets </li>
-				<li class="category" data-category="shirts"   > shirts  </li>
-				<li class="category" data-category="pants"    > pants   </li>
-			</ul>
+			<div id="categoryContainer" class="clearfix">
 	
-			<ul class="navDrop" id="dropWomens">	
-				<li class="category" data-category="sweaters"  > sweaters </li>
-				<li class="category" data-category="skirts"    > skirts   </li>
-				<li class="category" data-category="pants"     > pants    </li>
-			</ul>
+				<ul class="navDrop" id="dropMens">	
+					<li class="category" data-category="jackets"  > jackets </li>
+					<li class="category" data-category="shirts"   > shirts  </li>
+					<li class="category" data-category="pants"    > pants   </li>
+				</ul>
+		
+				<ul class="navDrop" id="dropWomens">	
+					<li class="category" data-category="sweaters"  > sweaters </li>
+					<li class="category" data-category="skirts"    > skirts   </li>
+					<li class="category" data-category="pants"     > pants    </li>
+				</ul>
+		
+				<ul class="navDrop" id="dropAccessories">	
+					<li class="category" data-category="bags"     > bags     </li>
+					<li class="category" data-category="shoes"    > shoes    </li>
+					<li class="category" data-category="bandanas" > bandanas </li>
+				</ul>
 	
-			<ul class="navDrop" id="dropAccessories">	
-				<li class="category" data-category="bags"    > bags     </li>
-				<li class="category" data-category="shoes"   > shoes    </li>
-				<li class="category" data-category="bandanas"> bandanas </li>
-			</ul>
+			</div>
+		</div>	
 
-		</div>
+	</nav>
 
 
 	<!-- Product ...............................................  -->
 
-		<div id="imgContainer">
-				
-        	<!-- row1 -->
-        		<img class="sidePic"  >
-        		<img class="middlePic">
-        		<img class="sidePic"  >
+	<div id="imgContainer" class="clearfix"> 
+			
+       	<!-- row1 -->
+       		<img class="row1 column1">
+       		<img class="row1 column2">
+       		<img class="row1 column3">
+       	<!-- row2 -->
+       		<img class="row2 column1">
+       		<img class="row2 column2">
+       		<img class="row2 column3">
+      	
+       	<!-- row3 -->
+       		<img class="row3 column1">
+       		<img class="row3 column2">
+       		<img class="row3 column3">
 
-        	<!-- row2 -->
-        		<img class="sidePic"  >
-        		<img class="middlePic">
-        		<img class="sidePic"  >
-       	
-        	<!-- row3 -->
-        		<img class="sidePic"  >
-        		<img class="middlePic">
-        		<img class="sidePic"  >
-		</div>
+	</div>
 
 
 	<!-- Footer ............................................... -->
 
-		<footer>
-			<div class="footer">
-			
-				<ul id="footerLeft">
-				    <li class="leftFooter" href="#" data-link="about"  id="bottomLeft"> about   </li>
-				    <li class="leftFooter" href="#" data-link="faq"    > faq     </li>
-				    <li class="leftFooter" href="#" data-link="contact"> contact </li>
-				</ul>
+	<footer>
+		<div id="footerContainer">
+		
+			<ul id="footerLeft">
+			    <li class="leftFooter" href="#" data-link="about" id="bottomLeft"> about   </li>
+			    <li class="leftFooter" href="#" data-link="faq"                  > faq     </li>
+			    <li class="leftFooter" href="#" data-link="contact"              > contact </li>
+			</ul>
 
-			<!-- <div id="footerCenter" class="footer center"> </div> -->
+			<div id="footerCenter"> </div>
 
-<!-- 			<ul id="footerCenter">
-			    <li class="footer center" href="#" data-link="	"> ... </li>
-			    <li class="footer center" href="#" data-link="	"> ... </li>
-			    <li class="footer center" href="#" data-link="	"> ... </li>
-			</ul> -->
-
-				<div id="footerRight"> 
-					<p id="allRights">all rights reserved.</p> 
-				</div>
-
+			<div id="footerRight"> 
+				<p id="allRights">all rights reserved.</p> 
 			</div>
-		</footer>
 
-<!-- 	</div> -->
+		</div>
+	</footer>
+
+</div>
 	
 
 <!-- jQuery CDN -->
