@@ -5,7 +5,7 @@
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
 	
-		<title>Blank Template</title>
+		<title>Form Test</title>
 		
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -15,12 +15,100 @@
 	</head>
 	<body>
 		<div id="container">
+
+		<!-- Header -->
 			<header>
-				
 			</header> 	
 			
-			<footer>
+		<!-- Your Contact Info -->
+			<h3> Your Contact Info </h3>
+
+			<!-- Your Name -->
+			<div class="field">
+				<label for="first"> Your Name </label>
+				<input id="first" class="input" placeholder="First" type="text" name="first" />
+				<input id="last"  class="input" placeholder="Last"  type="text" name="last"  />
+			</div>
+	
 			
+			<!-- Phone Number -->
+			<div class="field">
+				<label for="phoneNumber"> Phone Number </label>
+				<input id="phoneNumber1" class="input phone" placeholder="" type="text" name="phoneNumber1" />
+					<span class="dash"> - </span> 
+				<input id="phoneNumber2" class="input phone" placeholder="" type="text" name="phoneNumber2" />
+					<span class="dash"> - </span>
+				<input id="phoneNumber3" class="input phone" placeholder="" type="text" name="phoneNumber3" />
+			</div>		
+
+
+			<!-- Address -->
+			<div class="field">
+				<label for="address"> Address </label>
+				<div id="addressContainer">
+					<input id="streetAddress1" placeholder="Street Address"   class="input address" type="text" name="name" />
+					<input id="streetAddress2" placeholder="Street Address 2" class="input address" type="text" name="name" />
+					<input id="city"           placeholder="City"             class="input address" type="text" name="name" />
+					<input id="state"          placeholder="State"            class="input address" type="text" name="name" />
+					<input id="postalCode"     placeholder="Postal Code"      class="input address" type="text" name="name" />
+				</div>
+			</div>	
+
+
+		<!-- Skills & Interest -->
+			<h3> Skills & Interest </h3>
+
+			<!-- Course -->
+			      <div class="field">
+			      	<label for="course"> Course </label>
+			        <select name="course">
+					  <optgroup label="Web Development"> 
+					    <option value="frontEnd"> Front-end </option>
+					    <option value="backEnd" > Back-end  </option>
+					  </optgroup>
+					  <optgroup label="Design"> 
+					    <option value="visualDesign"> Visual Design </option>
+					    <option value="doctorate"   > Doctorate     </option>
+					  </optgroup>
+			        </select>
+			      </div>	
+			
+			<!-- Past Experience -->
+			<div class="field">
+				<label for="pastExperience"> Past Experience </label>
+				<textarea class="input textarea" name="message" id="message"></textarea>
+			</div>
+
+		<!-- Anything Else? -->
+			<h3> Anything Else? </h3>
+
+			<!-- Referral -->
+			      <div class="field">
+			      	<label for="course"> Course </label>
+			        <select name="course">
+					    <option value="none"       > None       </option>
+					    <option value="friend"     > Friend     </option>
+					    <option value="instructor" > Instructor </option>
+					    <option value="online"     > Online     </option>
+			        </select>
+			      </div>
+
+
+			<!-- Comments -->
+			<div class="field">
+				<label for="comments"> Comments </label>
+				<textarea class="input textarea" name="message" id="message"></textarea>
+			</div>
+
+		<!-- Buttons -->
+
+			<div class="buttons">
+				<button id="buttonSave"  > Save Draft </button>
+				<button id="buttonSubmit"> Submit     </button>
+			</div>
+
+		<!-- Footer -->
+			<footer>
 			</footer>
 		</div><!-- #container --> 
 	</body>

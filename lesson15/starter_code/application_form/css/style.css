@@ -74,7 +74,81 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
+h3 {
+     padding-left: 20px;
+     padding-top: 40px;
+}
 
+
+.field {
+     margin-left: 200px;
+     width: 900px;
+     height: 36px;
+}
+
+label {
+     width: 150px;
+     position: absolute;
+     left:0;
+     padding-left: 20px;
+}
+
+input {
+     border-radius: 5px;
+     box-shadow: none;
+     border: solid silver 1px;
+     padding: 2px;
+}
+
+textarea {
+     width: 340px;
+     height: 70px;
+     border-radius: 5px;
+     border: solid silver 1px;
+}
+
+select {
+     border: solid silver 1px;
+}
+
+.dash {
+     color: silver;
+}
+
+.phone {
+     width: 50px;
+}
+
+#addressContainer {
+     width: 340px;
+}
+
+.address {
+     width: 100%;
+     margin-top: 5px;
+}
+
+#city {
+     width: 160px;
+}      
+
+#state, 
+#postalCode{
+     width: 86px;
+}
+
+.buttons {
+
+}
+
+button {
+     padding: 5px;
+     margin-top: 50px;
+     margin-left: 20px;
+     height: 100%;
+     border-radius: 5px;
+     border: solid silver 1px;
+}
 
 
 
